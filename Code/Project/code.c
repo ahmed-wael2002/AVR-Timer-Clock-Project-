@@ -1,0 +1,144 @@
+#include <avr/io.h>
+#include <util/delay.h>
+#include <avr/interrupt.h>
+#define UNITS 10
+#define TENS 6
+
+/*** GLOBAL TIMING VARIABLES ***/
+// Timing variables for each display
+unsigned char sec_u = 0;
+unsigned char sec_t = 0;
+unsigned char min_u = 0;
+unsigned char min_t = 0;
+unsigned char hour_u = 0;
+unsigned char hour_t = 0;
+// Computational variables
+unsigned char pause_flag = 0;
+
+/*** Init FUNCTIONS ***/
+void Timer1_Init(void){
+	TCCR1A = (1<<FOC1A);
+	TCCR1B = (1<<CS12) | (1<<CS10) | (1<<WGM12);
+	TCNT1 = 0;
+	OCR1A = 977;			// Compare value
+	TIMSK |= (1<<OCIE1A);	// Enable Module Interrupt
+}
+
+void INT0_Init(void){
+	DDRD &= ~(1<<PD2);	// INT0 button input
+	PORTD |= (1<<PD2);
+	MCUCR |= (1<<ISC01);	// Configure Falling Edge
+	GICR |= (1<<INT0);	// Enable INT0 Interrupt
+}
+
+void INT1_Init(void){
+	DDRD &= ~(1<<PD3);	// INT1 button input
+	MCUCR |= (1<<ISC11) | (1<<ISC10);
+	GICR |= (1<<INT1);	// Enable INT1 Interrupt
+}
+
+void INT2_Init(void){
+	DDRB &= ~(1<<PB2);	// INT2 button input
+	PORTB |= (1<<PB2);
+	MCUCSR &= ~(1<<ISC2);
+	GICR |= (1<<INT2); 	// Enable INT2 Interrupt
+}
+
+/*** ISR INTERRUPT HANDLING FUNCTIONS ***/
+ISR(TIMER1_COMPA_vect){
+	if (!pause_flag){
+		sec_u ++;
+		if (sec_u == UNITS){
+			sec_u = 0;
+			sec_t++;
+		}
+		if (sec_t == TENS){
+			sec_t = 0;
+			min_u++;
+		}
+		if (min_u == UNITS){
+			min_u = 0;
+			min_t++;
+		}
+		if (min_t == TENS){
+			min_t = 0;
+			hour_u++;
+		}
+		if (hour_u == UNITS){
+			hour_u = 0;
+			hour_t++;
+		}
+	}
+}
+
+ISR (INT0_vect){
+	// Reset all variables
+	sec_u = 0;
+	sec_t = 0;
+	min_u = 0;
+	min_t = 0;
+	hour_u = 0;
+	hour_t = 0;
+}
+
+ISR (INT1_vect){
+	pause_flag = 1;
+}
+
+ISR (INT2_vect){
+	pause_flag = 0;
+}
+
+int main(void){
+	/*** PINS DIRECTION DEFINITION ***/
+	Timer1_Init();		// Configuring Timer 1
+	INT0_Init();		// Configuring INT0
+	INT1_Init();		// Configuring INT1
+	INT2_Init();		// Configuring INT2
+	DDRC |= 0x0F; 		// PC0-PC3 are output to 7447
+	DDRA |= 0x3F; 		// PA0-PA5 are output to displays' enables
+	SREG |= (1<<7);		// Enable I-BIT
+
+	while(1){
+		/** Application **/
+		// Display 1
+		PORTA &= ~(0x3F); 	// Disable all displays
+		PORTA |= (1<<PA0);	// Enable the first display
+		PORTC = (PORTC&~(0x0F)) | (sec_u & (0x0F));
+		_delay_ms(1);
+
+		// Display 2
+		PORTA &= ~(0x3F); 	// Disable all displays
+		PORTA |= (1<<PA1);	// Enable the second display
+		PORTC = (PORTC&~(0x0F)) | (sec_t & (0x0F));
+		_delay_ms(1);
+
+
+		// Display 3
+		PORTA &= ~(0x3F); 	// Disable all displays
+		PORTA |= (1<<PA2);	// Enable the third display
+		PORTC = (PORTC&~(0x0F)) | (min_u & (0x0F));
+		_delay_ms(1);
+
+
+		// Display 4
+		PORTA &= ~(0x3F); 	// Disable all displays
+		PORTA |= (1<<PA3);	// Enable the fourth display
+		PORTC = (PORTC&~(0x0F)) | (min_t & (0x0F));
+		_delay_ms(1);
+
+		// Display 5
+		PORTA &= ~(0x3F); 	// Disable all displays
+		PORTA |= (1<<PA4);	// Enable the fifth display
+		PORTC = (PORTC&~(0x0F)) | (hour_u & (0x0F));
+		_delay_ms(1);
+
+		// Display 6
+		PORTA &= ~(0x3F); 	// Disable all displays
+		PORTA |= (1<<PA5);	// Enable the sixth display
+		PORTC = (PORTC&~(0x0F)) | (hour_t & (0x0F));
+		_delay_ms(1);
+
+	}
+	return 0;
+}

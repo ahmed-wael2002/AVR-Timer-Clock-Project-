@@ -1,0 +1,1302 @@
+20:04:55 **** Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:15: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:15: warning: type of 'TIMER1_COMP_vect' defaults to 'int'
+../code.c:16: error: 'pause_flag' undeclared (first use in this function)
+../code.c:16: error: (Each undeclared identifier is reported only once
+../code.c:16: error: for each function it appears in.)
+../code.c:17: error: 'sec_u' undeclared (first use in this function)
+../code.c:20: error: 'sec_t' undeclared (first use in this function)
+../code.c:24: error: 'min_u' undeclared (first use in this function)
+../code.c:28: error: 'min_t' undeclared (first use in this function)
+../code.c:32: error: 'hour_u' undeclared (first use in this function)
+../code.c:36: error: 'hour_t' undeclared (first use in this function)
+../code.c:39: warning: control reaches end of non-void function
+make: *** [code.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:05:27 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:26: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:26: warning: type of 'TIMER1_COMP_vect' defaults to 'int'
+../code.c:50: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     748 bytes (2.3% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:14:49 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:26: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:26: warning: type of 'TIMER1_COMP_vect' defaults to 'int'
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     746 bytes (2.3% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:26:52 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of 'TIMER1_COMP_vect' defaults to 'int'
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     758 bytes (2.3% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:48:59 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of 'TIMER1_COMP_vect' defaults to 'int'
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5192 bytes (15.8% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:49:41 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of 'TIMER1_COMP_vect' defaults to 'int'
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     758 bytes (2.3% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:50:31 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of 'TIMER1_COMP_vect' defaults to 'int'
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5192 bytes (15.8% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:50:58 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of 'TIMER1_COMP_vect' defaults to 'int'
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5192 bytes (15.8% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:51:36 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of 'TIMER1_COMP_vect' defaults to 'int'
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5192 bytes (15.8% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:57:57 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5192 bytes (15.8% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:58:06 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5192 bytes (15.8% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:02:29 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5192 bytes (15.8% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:03:46 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5192 bytes (15.8% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:05:19 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:51: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5194 bytes (15.9% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:28:37 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:51: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5194 bytes (15.9% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:37:42 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:52: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5224 bytes (15.9% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:39:25 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:29: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5096 bytes (15.6% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:43:24 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:52: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5224 bytes (15.9% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:43:52 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:52: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5224 bytes (15.9% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:47:11 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:52: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3910 bytes (11.9% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:48:55 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:52: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3910 bytes (11.9% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:52:16 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:52: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3910 bytes (11.9% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:53:00 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:52: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3910 bytes (11.9% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:53:42 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:52: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3910 bytes (11.9% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:17:27 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:51: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     760 bytes (2.3% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:20:09 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:51: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5194 bytes (15.9% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:22:28 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:29: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5076 bytes (15.5% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:26:52 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:29: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5096 bytes (15.6% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:28:31 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:29: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5094 bytes (15.5% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:31:11 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:3:26: warning: avr/interrup.h: No such file or directory
+../code.c:28: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:28: warning: type of '__vector_7' defaults to 'int'
+../code.c:30: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5096 bytes (15.6% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:31:28 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5122 bytes (15.6% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:31:34 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5122 bytes (15.6% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:32:17 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../code.c:27: warning: return type defaults to 'int'
+../code.c: In function 'ISR':
+../code.c:27: warning: type of '__vector_7' defaults to 'int'
+../code.c:51: warning: control reaches end of non-void function
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5194 bytes (15.9% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:32:39 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5200 bytes (15.9% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:52:03 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5460 bytes (16.7% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:53:26 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5472 bytes (16.7% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:10:19 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Building file: ../code.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"code.d" -MT"code.o" -c -o "code.o" "../code.c"
+In file included from ../code.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../code.c
+ 
+Building target: Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project.map -mmcu=atmega32 -o "Project.elf"  ./code.o   
+Finished building target: Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project.elf  >"Project.lss"
+Finished building: Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5500 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:10:57 **** Incremental Build of configuration Debug for project Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5500 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:         15 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

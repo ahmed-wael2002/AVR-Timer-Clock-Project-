@@ -1,0 +1,28 @@
+#include <avr/io.h>
+#include <util/delay.h>
+#define UNITS 10
+#define TENS 6
+
+
+/*** GLOBAL TIMING VARIABLES ***/
+// Timing variables for each display
+unsigned char sec_u = 0;
+unsigned char sec_t = 0;
+unsigned char min_u = 0;
+unsigned char min_t = 0;
+unsigned char hour_u = 0;
+unsigned char hour_t = 0;
+// Pause-Resume flag
+unsigned char pause_flag = 0;
+
+/*** PINS DIRECTION DECLARATION ***/
+DDRC |= 0x0F; // PC0-PC3 are output to 7447
+
+
+int main(void){
+	while(1){
+		/** Application **/
+
+	}
+	return 0;
+}

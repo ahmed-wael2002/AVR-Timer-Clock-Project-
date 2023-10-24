@@ -1,0 +1,59 @@
+#include <avr/io.h>
+#include <util/delay.h>
+#define UNITS 10
+#define TENS 6
+
+void printNumber (unsigned char x){
+	PORTA &= ~(0xFE);
+	switch(x){
+	case 0:
+		PORTA |= 0b01111110;
+		break;
+	case 1:
+		PORTA |= 0b00001100;
+		break;
+	case 2:
+		PORTA |= 0b10110110;
+		break;
+	case 3:
+		PORTA |= 0b10011110;
+		break;
+	case 4:
+		PORTA |= 0b11001100;
+		break;
+	case 5:
+		PORTA |= 0b11011010;
+		break;
+	case 6:
+		PORTA |= 0b11111010;
+		break;
+	case 7:
+		PORTA |= 0b00001110;
+		break;
+	case 8:
+		PORTA |= 0b11111110;
+		break;
+	case 9:
+		PORTA |= 0b11011110;
+		break;
+	default:
+		PORTA |= 0b11100010;
+	}
+}
+
+char sec_u = 0;
+char sec_t = 0;
+
+char min_u = 0;
+char min_t = 0;
+
+char hour_u = 0;
+char hour_t = 0;
+
+int main(void){
+	while(1){
+		/** Application **/
+
+	}
+	return 0;
+}
